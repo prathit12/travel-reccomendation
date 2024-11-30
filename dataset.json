@@ -1,0 +1,1002 @@
+[
+    {
+        "destination": "Madrid",
+        "price": 6033,
+        "type": "Beach",
+        "activities": "dining",
+        "season": "Spring",
+        "rating": 4,
+        "reviews_count": 792,
+        "timezone": "IST"
+    },
+    {
+        "destination": "New York",
+        "price": 4374,
+        "type": "Urban",
+        "activities": "shopping",
+        "season": "Winter",
+        "rating": 2,
+        "reviews_count": 789,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Seoul",
+        "price": 7559,
+        "type": "Nature",
+        "activities": "fishing, camping, wildlife safari",
+        "season": "Summer",
+        "rating": 2,
+        "reviews_count": 459,
+        "timezone": "EST"
+    },
+    {
+        "destination": "New York",
+        "price": 8952,
+        "type": "Nature",
+        "activities": "birdwatching, wildlife safari",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 154,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Cairo",
+        "price": 9202,
+        "type": "Adventure",
+        "activities": "rock climbing, skydiving",
+        "season": "Winter",
+        "rating": 4,
+        "reviews_count": 848,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Cairo",
+        "price": 6581,
+        "type": "Urban",
+        "activities": "nightlife, architecture, museums",
+        "season": "Winter",
+        "rating": 5,
+        "reviews_count": 435,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 7972,
+        "type": "Urban",
+        "activities": "shopping",
+        "season": "Spring",
+        "rating": 3,
+        "reviews_count": 499,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Vienna",
+        "price": 3580,
+        "type": "Adventure",
+        "activities": "skydiving",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 966,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Los Angeles",
+        "price": 5746,
+        "type": "Urban",
+        "activities": "architecture, shopping, museums",
+        "season": "Winter",
+        "rating": 3,
+        "reviews_count": 695,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Rio de Janeiro",
+        "price": 6434,
+        "type": "Nature",
+        "activities": "hiking",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 721,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Cairo",
+        "price": 7576,
+        "type": "Mountain",
+        "activities": "camping",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 978,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Singapore",
+        "price": 7496,
+        "type": "Nature",
+        "activities": "hiking, camping",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 952,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Paris",
+        "price": 7055,
+        "type": "Urban",
+        "activities": "shopping, museums",
+        "season": "Spring",
+        "rating": 1,
+        "reviews_count": 692,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Lisbon",
+        "price": 1003,
+        "type": "Mountain",
+        "activities": "skiing, hiking",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 538,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Los Angeles",
+        "price": 3062,
+        "type": "Adventure",
+        "activities": "bungee jumping",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 272,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Cairo",
+        "price": 1985,
+        "type": "Urban",
+        "activities": "dining",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 972,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Mexico City",
+        "price": 4960,
+        "type": "Beach",
+        "activities": "surfing, snorkeling, beach volleyball",
+        "season": "Summer",
+        "rating": 2,
+        "reviews_count": 83,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Hong Kong",
+        "price": 5988,
+        "type": "Beach",
+        "activities": "surfing, beach volleyball",
+        "season": "Spring",
+        "rating": 1,
+        "reviews_count": 280,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Barcelona",
+        "price": 3770,
+        "type": "Mountain",
+        "activities": "mountain biking, skiing, sightseeing",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 265,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Zurich",
+        "price": 4276,
+        "type": "Mountain",
+        "activities": "mountain biking, camping, hiking",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 485,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Singapore",
+        "price": 7618,
+        "type": "Mountain",
+        "activities": "camping",
+        "season": "Spring",
+        "rating": 1,
+        "reviews_count": 721,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Barcelona",
+        "price": 6474,
+        "type": "Mountain",
+        "activities": "hiking, sightseeing, camping",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 418,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Prague",
+        "price": 1600,
+        "type": "Mountain",
+        "activities": "camping",
+        "season": "Fall",
+        "rating": 3,
+        "reviews_count": 212,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 1962,
+        "type": "Nature",
+        "activities": "camping, wildlife safari, fishing",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 223,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Cairo",
+        "price": 2159,
+        "type": "Mountain",
+        "activities": "mountain biking",
+        "season": "Winter",
+        "rating": 4,
+        "reviews_count": 641,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Hong Kong",
+        "price": 1070,
+        "type": "Urban",
+        "activities": "dining, shopping",
+        "season": "Winter",
+        "rating": 5,
+        "reviews_count": 468,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 3236,
+        "type": "Nature",
+        "activities": "birdwatching, hiking, wildlife safari",
+        "season": "Fall",
+        "rating": 3,
+        "reviews_count": 62,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Kuala Lumpur",
+        "price": 2569,
+        "type": "Adventure",
+        "activities": "bungee jumping, zip-lining, rock climbing",
+        "season": "Spring",
+        "rating": 3,
+        "reviews_count": 342,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Mexico City",
+        "price": 4890,
+        "type": "Urban",
+        "activities": "nightlife, dining",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 694,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Dubai",
+        "price": 1945,
+        "type": "Nature",
+        "activities": "camping, hiking, fishing",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 212,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Berlin",
+        "price": 5137,
+        "type": "Beach",
+        "activities": "beach volleyball, surfing, snorkeling",
+        "season": "Spring",
+        "rating": 3,
+        "reviews_count": 726,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 3504,
+        "type": "Adventure",
+        "activities": "rafting, bungee jumping, zip-lining",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 860,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "New York",
+        "price": 3718,
+        "type": "Beach",
+        "activities": "dining, sunbathing, beach volleyball",
+        "season": "Winter",
+        "rating": 2,
+        "reviews_count": 588,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Singapore",
+        "price": 6070,
+        "type": "Mountain",
+        "activities": "sightseeing",
+        "season": "Fall",
+        "rating": 3,
+        "reviews_count": 909,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Singapore",
+        "price": 8737,
+        "type": "Mountain",
+        "activities": "camping",
+        "season": "Fall",
+        "rating": 2,
+        "reviews_count": 339,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Rome",
+        "price": 6596,
+        "type": "Adventure",
+        "activities": "bungee jumping, zip-lining",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 708,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Singapore",
+        "price": 4218,
+        "type": "Nature",
+        "activities": "hiking",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 943,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Vienna",
+        "price": 8039,
+        "type": "Beach",
+        "activities": "surfing, dining",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 520,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Kuala Lumpur",
+        "price": 3007,
+        "type": "Mountain",
+        "activities": "hiking, sightseeing",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 215,
+        "timezone": "IST"
+    },
+    {
+        "destination": "London",
+        "price": 3293,
+        "type": "Urban",
+        "activities": "architecture",
+        "season": "Spring",
+        "rating": 1,
+        "reviews_count": 857,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Madrid",
+        "price": 4103,
+        "type": "Beach",
+        "activities": "snorkeling, beach volleyball",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 52,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 1665,
+        "type": "Urban",
+        "activities": "shopping",
+        "season": "Winter",
+        "rating": 2,
+        "reviews_count": 946,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Prague",
+        "price": 9857,
+        "type": "Mountain",
+        "activities": "mountain biking",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 836,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Sydney",
+        "price": 7455,
+        "type": "Adventure",
+        "activities": "rafting, rock climbing",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 871,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Zurich",
+        "price": 3097,
+        "type": "Beach",
+        "activities": "beach volleyball, dining, surfing",
+        "season": "Fall",
+        "rating": 2,
+        "reviews_count": 815,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Vienna",
+        "price": 4129,
+        "type": "Urban",
+        "activities": "architecture, museums",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 902,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Sydney",
+        "price": 9630,
+        "type": "Adventure",
+        "activities": "zip-lining",
+        "season": "Fall",
+        "rating": 2,
+        "reviews_count": 882,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 4119,
+        "type": "Mountain",
+        "activities": "mountain biking, camping",
+        "season": "Spring",
+        "rating": 1,
+        "reviews_count": 150,
+        "timezone": "IST"
+    },
+    {
+        "destination": "London",
+        "price": 8847,
+        "type": "Urban",
+        "activities": "shopping, museums",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 96,
+        "timezone": "EST"
+    },
+    {
+        "destination": "London",
+        "price": 6806,
+        "type": "Adventure",
+        "activities": "rock climbing",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 355,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Mexico City",
+        "price": 5677,
+        "type": "Mountain",
+        "activities": "camping, skiing",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 519,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 7533,
+        "type": "Beach",
+        "activities": "snorkeling",
+        "season": "Winter",
+        "rating": 3,
+        "reviews_count": 516,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 8558,
+        "type": "Beach",
+        "activities": "sunbathing, beach volleyball",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 900,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 4698,
+        "type": "Nature",
+        "activities": "camping",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 787,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Vancouver",
+        "price": 5841,
+        "type": "Urban",
+        "activities": "architecture, dining, shopping",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 938,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Bangkok",
+        "price": 1291,
+        "type": "Beach",
+        "activities": "beach volleyball, surfing, snorkeling",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 877,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 7157,
+        "type": "Beach",
+        "activities": "surfing",
+        "season": "Summer",
+        "rating": 1,
+        "reviews_count": 748,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Zurich",
+        "price": 7942,
+        "type": "Beach",
+        "activities": "sunbathing, beach volleyball, surfing",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 891,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Rio de Janeiro",
+        "price": 6174,
+        "type": "Adventure",
+        "activities": "skydiving, rafting, rock climbing",
+        "season": "Winter",
+        "rating": 4,
+        "reviews_count": 488,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Kuala Lumpur",
+        "price": 2706,
+        "type": "Adventure",
+        "activities": "bungee jumping",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 632,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Cape Town",
+        "price": 9485,
+        "type": "Nature",
+        "activities": "wildlife safari, hiking",
+        "season": "Spring",
+        "rating": 4,
+        "reviews_count": 351,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Lisbon",
+        "price": 7250,
+        "type": "Adventure",
+        "activities": "bungee jumping, rock climbing, rafting",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 78,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 1770,
+        "type": "Beach",
+        "activities": "snorkeling, beach volleyball, sunbathing",
+        "season": "Spring",
+        "rating": 2,
+        "reviews_count": 982,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 6071,
+        "type": "Mountain",
+        "activities": "sightseeing",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 220,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Hong Kong",
+        "price": 3829,
+        "type": "Beach",
+        "activities": "surfing, dining, beach volleyball",
+        "season": "Winter",
+        "rating": 5,
+        "reviews_count": 393,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Vienna",
+        "price": 7526,
+        "type": "Urban",
+        "activities": "dining",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 327,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 8019,
+        "type": "Urban",
+        "activities": "nightlife, shopping",
+        "season": "Spring",
+        "rating": 3,
+        "reviews_count": 572,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Dubai",
+        "price": 1360,
+        "type": "Mountain",
+        "activities": "mountain biking",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 897,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "London",
+        "price": 6109,
+        "type": "Nature",
+        "activities": "birdwatching",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 351,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Sydney",
+        "price": 6003,
+        "type": "Urban",
+        "activities": "architecture, shopping, dining",
+        "season": "Summer",
+        "rating": 1,
+        "reviews_count": 504,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Singapore",
+        "price": 8331,
+        "type": "Mountain",
+        "activities": "mountain biking, camping, sightseeing",
+        "season": "Summer",
+        "rating": 1,
+        "reviews_count": 870,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Kuala Lumpur",
+        "price": 6433,
+        "type": "Nature",
+        "activities": "hiking, fishing",
+        "season": "Winter",
+        "rating": 4,
+        "reviews_count": 606,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Moscow",
+        "price": 4668,
+        "type": "Mountain",
+        "activities": "skiing",
+        "season": "Summer",
+        "rating": 2,
+        "reviews_count": 632,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Vancouver",
+        "price": 4002,
+        "type": "Urban",
+        "activities": "nightlife, dining, shopping",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 999,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 9035,
+        "type": "Adventure",
+        "activities": "rock climbing, rafting",
+        "season": "Summer",
+        "rating": 5,
+        "reviews_count": 172,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "London",
+        "price": 7144,
+        "type": "Urban",
+        "activities": "shopping",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 863,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Dubai",
+        "price": 9866,
+        "type": "Urban",
+        "activities": "museums",
+        "season": "Spring",
+        "rating": 4,
+        "reviews_count": 997,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Singapore",
+        "price": 1502,
+        "type": "Nature",
+        "activities": "camping, wildlife safari, birdwatching",
+        "season": "Summer",
+        "rating": 2,
+        "reviews_count": 357,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Lisbon",
+        "price": 3947,
+        "type": "Mountain",
+        "activities": "skiing, mountain biking, camping",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 281,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Mexico City",
+        "price": 9633,
+        "type": "Adventure",
+        "activities": "skydiving, zip-lining, rock climbing",
+        "season": "Summer",
+        "rating": 3,
+        "reviews_count": 258,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Vienna",
+        "price": 7100,
+        "type": "Adventure",
+        "activities": "skydiving, bungee jumping",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 525,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Vancouver",
+        "price": 9549,
+        "type": "Mountain",
+        "activities": "sightseeing, skiing",
+        "season": "Spring",
+        "rating": 4,
+        "reviews_count": 206,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 1066,
+        "type": "Adventure",
+        "activities": "skydiving, rafting",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 782,
+        "timezone": "EST"
+    },
+    {
+        "destination": "San Francisco",
+        "price": 4047,
+        "type": "Adventure",
+        "activities": "bungee jumping, skydiving",
+        "season": "Winter",
+        "rating": 4,
+        "reviews_count": 977,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Rome",
+        "price": 4388,
+        "type": "Adventure",
+        "activities": "skydiving",
+        "season": "Summer",
+        "rating": 1,
+        "reviews_count": 820,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Moscow",
+        "price": 2294,
+        "type": "Beach",
+        "activities": "beach volleyball, snorkeling, sunbathing",
+        "season": "Fall",
+        "rating": 1,
+        "reviews_count": 389,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 1662,
+        "type": "Adventure",
+        "activities": "bungee jumping, zip-lining",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 89,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Rio de Janeiro",
+        "price": 3504,
+        "type": "Adventure",
+        "activities": "rafting, zip-lining",
+        "season": "Winter",
+        "rating": 5,
+        "reviews_count": 870,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Seoul",
+        "price": 3206,
+        "type": "Nature",
+        "activities": "wildlife safari, fishing",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 656,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Kuala Lumpur",
+        "price": 8777,
+        "type": "Urban",
+        "activities": "museums",
+        "season": "Spring",
+        "rating": 5,
+        "reviews_count": 399,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Paris",
+        "price": 2724,
+        "type": "Mountain",
+        "activities": "mountain biking, camping, hiking",
+        "season": "Winter",
+        "rating": 5,
+        "reviews_count": 321,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Dubai",
+        "price": 6919,
+        "type": "Nature",
+        "activities": "hiking",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 389,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Dubai",
+        "price": 8628,
+        "type": "Mountain",
+        "activities": "skiing",
+        "season": "Fall",
+        "rating": 5,
+        "reviews_count": 153,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Berlin",
+        "price": 2545,
+        "type": "Adventure",
+        "activities": "zip-lining, rock climbing",
+        "season": "Spring",
+        "rating": 2,
+        "reviews_count": 649,
+        "timezone": "GMT"
+    },
+    {
+        "destination": "Amsterdam",
+        "price": 8509,
+        "type": "Urban",
+        "activities": "shopping, nightlife, museums",
+        "season": "Fall",
+        "rating": 3,
+        "reviews_count": 693,
+        "timezone": "EST"
+    },
+    {
+        "destination": "Tokyo",
+        "price": 3927,
+        "type": "Adventure",
+        "activities": "rock climbing, skydiving",
+        "season": "Spring",
+        "rating": 4,
+        "reviews_count": 297,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Moscow",
+        "price": 1316,
+        "type": "Adventure",
+        "activities": "bungee jumping, zip-lining, rock climbing",
+        "season": "Summer",
+        "rating": 4,
+        "reviews_count": 240,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Rio de Janeiro",
+        "price": 7976,
+        "type": "Beach",
+        "activities": "surfing, sunbathing",
+        "season": "Fall",
+        "rating": 4,
+        "reviews_count": 323,
+        "timezone": "IST"
+    },
+    {
+        "destination": "Zurich",
+        "price": 1755,
+        "type": "Mountain",
+        "activities": "camping",
+        "season": "Winter",
+        "rating": 2,
+        "reviews_count": 278,
+        "timezone": "UTC"
+    },
+    {
+        "destination": "Cairo",
+        "price": 1736,
+        "type": "Nature",
+        "activities": "hiking, wildlife safari",
+        "season": "Winter",
+        "rating": 1,
+        "reviews_count": 325,
+        "timezone": "EST"
+    }
+]

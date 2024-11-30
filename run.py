@@ -17,17 +17,44 @@ except ConnectionError as e:
 
 recommendation_engine = RecommendationEngine()
 
+
 @app.route('/search', methods=['GET'])
 def search():
-    query = request.args.get('q', '')
-    if not query:
-        return jsonify([])
+    # Extract query and filters from the request
+    query = request.args.get('q', '').strip()
+    filters = {
+        'type': request.args.get('type', None),
+        'season': request.args.get('season', None),
+        'maxPrice': request.args.get('maxPrice', None),
+        'rating': request.args.get('rating', None),
+        'timezone': request.args.get('timezone', None),  # Add timezone filter
+    }
+    sort = request.args.get('sort', 'price')
 
+    if not query:
+        return jsonify([])  # Return an empty list if query is missing
+
+    # Build Elasticsearch filters dynamically
+    must_filters = []
+
+    if filters['type']:
+        must_filters.append({"match": {"type": filters['type']}})
+    if filters['season']:
+        must_filters.append({"match": {"season": filters['season']}})
+    if filters['maxPrice']:
+        must_filters.append({"range": {"price": {"lte": int(filters['maxPrice'])}}})
+    if filters['rating']:
+        must_filters.append({"term": {"rating": int(filters['rating'])}})  # Exact match for numeric rating
+    if filters['timezone']:
+        must_filters.append({"match": {"timezone": filters['timezone']}})  # Add timezone filter
+
+    # Elasticsearch query
     response = app.elasticsearch.search(
         index="destinations",
         body={
             "query": {
                 "bool": {
+                    "must": must_filters,
                     "should": [
                         {
                             "multi_match": {
@@ -35,42 +62,38 @@ def search():
                                 "fields": [
                                     "destination^3",
                                     "type^2",
-                                    "activities^2",
+                                    "activities",
                                     "season"
                                 ],
                                 "fuzziness": "AUTO",
                                 "operator": "or"
-                            }
-                        },
-                        {
-                            "match_phrase_prefix": {
-                                "destination": {
-                                    "query": query,
-                                    "boost": 4
-                                }
                             }
                         }
                     ],
                     "minimum_should_match": 1
                 }
             },
-            "size": 10,
-            "_source": ["destination", "type", "activities", "price", "season"],
             "sort": [
+                {sort: {"order": "asc"}},  # Sort dynamically based on user input
                 "_score"
             ]
         }
     )
-    
-    # Format the response to include more details
-    results = []
-    for hit in response['hits']['hits']:
-        results.append({
+
+    # Format the response
+    results = [
+        {
             'score': hit['_score'],
             **hit['_source']
-        })
-    
+        }
+        for hit in response['hits']['hits']
+    ]
+
     return jsonify(results)
+
+
+
+
 
 @app.route('/recommendations', methods=['GET'])
 def recommendations():
