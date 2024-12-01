@@ -91,7 +91,7 @@ def generate_destination_data(cities):
 #         except Exception as e:
 #             print(f"Failed to upload {destination['destination']}: {e}")
 
-def upload_to_elasticsearch(file_path, index_name="travel_destinations"):
+def upload_to_elasticsearch(file_path, index_name="destination_reviews"):
     """
     Upload destination data from a JSON file to Elasticsearch.
     :param file_path: Path to the JSON file containing destination data.
@@ -115,14 +115,11 @@ def upload_to_elasticsearch(file_path, index_name="travel_destinations"):
 
     # Upload data
     for i, destination in enumerate(destinations):
-        try:
-            es.index(index=index_name, id=i, body=destination)
-            print(f"Uploaded: {destination['destination']}")
-        except Exception as e:
-            print(f"Failed to upload {destination['destination']}: {e}")
+        es.index(index=index_name, id=i, body=destination)
+
 
 if __name__ == "__main__":
-    upload_to_elasticsearch('dataset.json')
+    upload_to_elasticsearch('review_dataset.json')
     # country_codes = ["US", "CA", "IN", "DE", "AU"]  # Add more country codes for additional destinations
     # cities = fetch_popular_destinations(country_codes)
     # if cities:

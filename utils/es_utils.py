@@ -1,4 +1,3 @@
-
 from elasticsearch import Elasticsearch
 import time
 from config import Config
@@ -25,3 +24,6 @@ def wait_for_elasticsearch(max_retries=5, delay=5):
         time.sleep(delay)
     
     raise ConnectionError("Could not connect to Elasticsearch after maximum retries")
+
+def index_exists(es, index_name):
+    return es.indices.exists(index=index_name)

@@ -1,17 +1,54 @@
-
 from elasticsearch import Elasticsearch
-from utils.es_utils import wait_for_elasticsearch
+from utils.es_utils import wait_for_elasticsearch, index_exists
+import urllib3
+
+# Suppress InsecureRequestWarning
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 class RecommendationEngine:
     def __init__(self):
         self.es = wait_for_elasticsearch()
+        self.required_indices = ["user_profiles", "travel_trends", "destinations"]
+        self.check_indices()
+
+    def check_indices(self):
+        for index in self.required_indices:
+            if not index_exists(self.es, index):
+                raise Exception(f"Required index '{index}' does not exist in Elasticsearch.")
 
     def get_personalized_recommendations(self, user_id):
-        # Get user profile
-        user = self.es.get(index="user_profiles", id=user_id)
-        preferences = user['_source']['preferences']
+        try:
+            # Fetch user profile by querying `user_id` field
+            user_response = self.es.search(index="user_profiles", body={
+                "query": {
+                    "term": {
+                        "user_id": user_id  # Ensure `.keyword` is used for exact match
+                    }
+                }
+            })
+            
+            #Check if any documents were found
+            if user_response['hits']['total']['value'] == 0:
+                print(f"User profile not found for user {user_id}")
+                return {"hits": {"hits": []}}
+            
+            user = user_response['hits']['hits'][0]
+            print(f"User profile found: {user}")
+            preferences = user['_source']['preferences']
+        except Exception as e:
+            print(f"Error fetching user profile for user {user_id}: {e}")
+            return {"hits": {"hits": []}}
 
-        # Build recommendation query based on user preferences
+        # Get travel trends
+        trends_response = self.es.search(index="travel_trends", body={
+            "query": {
+                "match_all": {}
+            },
+            "size": 10000  # Fetch all trends
+        })
+        trends = trends_response['hits']['hits']
+
+        # Build recommendation query based on user preferences and trends
         should_conditions = []
         
         for activity in preferences['activities']:
@@ -25,6 +62,13 @@ class RecommendationEngine:
                 }
             }
         })
+
+        for season in preferences['preferred_seasons']:
+            should_conditions.append({"match": {"season": season}})
+
+        for trend in trends:
+            should_conditions.append({"match": {"activities": trend['_source']['trend']}})
+            should_conditions.append({"match": {"season": trend['_source']['season']}})
 
         body = {
             "query": {

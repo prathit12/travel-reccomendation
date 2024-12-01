@@ -4,6 +4,7 @@ from config import Config
 import os
 from utils.es_utils import wait_for_elasticsearch
 from recommendation_engine import RecommendationEngine
+from elasticsearch import Elasticsearch, NotFoundError
 
 app = Flask(__name__, static_folder='frontend/build', static_url_path='')
 CORS(app)
@@ -97,13 +98,17 @@ def search():
 
 @app.route('/recommendations', methods=['GET'])
 def recommendations():
-    user_id = request.args.get('user_id')
+    user_id = request.args.get("user_id")
     if not user_id:
         return jsonify({"error": "User ID is required"}), 400
 
-    response = recommendation_engine.get_personalized_recommendations(user_id)
-    results = [hit['_source'] for hit in response['hits']['hits']]
-    return jsonify(results)
+    try:
+        response = recommendation_engine.get_personalized_recommendations(user_id)
+        results = [hit['_source'] for hit in response['hits']['hits']]
+        return jsonify(results)
+    except Exception as e:
+        print(f"Error fetching recommendations for user {user_id}: {e}")
+        return jsonify({"error": "Failed to fetch recommendations"}), 500
 
 @app.route('/save-recommendation', methods=['POST'])
 def save_recommendation():
@@ -122,6 +127,62 @@ def save_recommendation():
     })
     
     return jsonify({"message": "Recommendation saved successfully"})
+
+
+
+
+
+@app.route('/destination/<destination_id>', methods=['GET'])
+def get_destination_details(destination_id):
+    try:
+        # Validate destination_id format
+        if not destination_id.startswith("destination_"):
+            return jsonify({"error": "Invalid destination ID format"}), 400
+
+        # Fetch destination details by matching 'id' field
+        result = app.elasticsearch.search(
+            index="destinations",
+            body={
+                "query": {
+                    "term": {
+                        "id.keyword": destination_id  # Match the 'id' field exactly
+                    }
+                }
+            }
+        )
+
+        # Check if the destination was found
+        if result['hits']['total']['value'] == 0:
+            return jsonify({"error": "Destination not found"}), 404
+
+        # Get the destination details
+        destination = result['hits']['hits'][0]['_source']
+
+        # Fetch associated reviews
+        reviews_result = app.elasticsearch.search(
+            index="destination_reviews",
+            body={
+                "query": {
+                    "term": {
+                        "destination_id.keyword": destination_id  # Match exact destination_id
+                    }
+                }
+            }
+        )
+
+        # Extract reviews
+        reviews = [hit['_source'] for hit in reviews_result['hits']['hits']]
+
+        return jsonify({
+            "destination": destination,
+            "reviews": reviews
+        })
+
+    except Exception as e:
+        # Log error for debugging (optional)
+        app.logger.error(f"Error fetching destination details for ID {destination_id}: {e}")
+        return jsonify({"error": "Internal server error"}), 500
+
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

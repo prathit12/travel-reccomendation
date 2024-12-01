@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Search.css';
 import defaultImage from '../assets/images/default.jpg';
+
 
 function Search() {
   const [query, setQuery] = useState('');
@@ -156,7 +158,7 @@ function Search() {
             <div key={index} className="result-card">
               {/* <button 
                 className={`favorite-btn ${favorites.includes(result.id) ? 'active' : ''}`}
-                onClick={() => toggleFavorite(result)}
+                onClick={() => toggleFavoriteq(result)}
               >
                 ❤
               </button> */}
@@ -178,6 +180,9 @@ function Search() {
                 {/* <p><strong>Popular Times:</strong> {result.popularTimes}</p>
                 <p><strong>Local Weather:</strong> {result.weather}</p> */}
               </div>
+              <Link to={`/destination/${result.id}`} className="view-details-btn">
+                View Details
+              </Link>
             </div>
           ))}
         </div>
